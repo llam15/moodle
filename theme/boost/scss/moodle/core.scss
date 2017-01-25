@@ -1370,7 +1370,7 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 
         .typename {
             display: inline-block;
-            width: 55%;
+            width: 50%;
         }
     }
 }
@@ -1391,6 +1391,20 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
 .choosercontainer #chooseform .option .typename,
 .choosercontainer #chooseform .nonoption .typename {
     padding: 0 0 0 0.5em;
+}
+
+.choosercontainer #chooseform .option .typename .star img,
+.choosercontainer #chooseform .nonoption .typename .star img {
+    float: right;
+    margin-right: -25px;
+    cursor: pointer;
+}
+
+.choosercontainer #chooseform .option .typename .star_empty img,
+.choosercontainer #chooseform .nonoption .typename .star_empty img {
+    float: right;
+    margin-right: -25px;
+    cursor: pointer;
 }
 
 .choosercontainer #chooseform .modicon + .typename {
@@ -1443,6 +1457,9 @@ body#page-lib-editor-tinymce-plugins-moodlemedia-preview {
     overflow-x: hidden;
     overflow-y: auto;
     line-height: 2em;
+}
+.jschooser .choosercontainer #chooseform .instruction .modchooserinstruction {
+    font-style: italic;
 }
 /* Selected option settings */
 .jschooser .choosercontainer #chooseform .instruction,

@@ -29,6 +29,7 @@ $string['actions'] = 'Actions';
 $string['active'] = 'Active';
 $string['activeusers'] = 'Active users';
 $string['activities'] = 'Activities';
+$string['activitiesresources'] = 'Activities/Resources';
 $string['activities_help'] = 'Activities, such as forums, quizzes and wikis, enable interactive content to be added to the course.';
 $string['activity'] = 'Activity';
 $string['activityclipboard'] = 'Moving this activity: {$a}';
@@ -74,6 +75,7 @@ $string['address'] = 'Address';
 $string['addstudent'] = 'Add student';
 $string['addsubcategory'] = 'Add a subcategory';
 $string['addteacher'] = 'Add teacher';
+$string['addtool'] = 'Add tool to favorites';
 $string['admin'] = 'Admin';
 $string['adminhelpaddnewuser'] = 'To manually create a new user account';
 $string['adminhelpassignadmins'] = 'Admins can do anything and go anywhere in the site';
@@ -425,6 +427,10 @@ $string['currentlyselectedusers'] = 'Currently selected users';
 $string['currentpicture'] = 'Current picture';
 $string['currentrelease'] = 'Current release information';
 $string['currentversion'] = 'Current version';
+$string['custommodchooserhelp'] = 'New layout - same great tools.
+<br><br>
+Don\'t see what you\'re looking for? Click \'Show all tools/Set favorite tools\' to see more.';
+$string['customizemodchooserlink'] = 'Try the customizable Activities/Resources chooser.';
 $string['databasechecking'] = 'Upgrading Moodle database from version {$a->oldversion} to {$a->newversion}';
 $string['databaseperformance'] = 'Database performance';
 $string['databasesetup'] = 'Setting up database';
@@ -778,6 +784,7 @@ $string['explanation'] = 'Explanation';
 $string['extendenrol'] = 'Extend enrolment (individual)';
 $string['extendperiod'] = 'Extended period';
 $string['failedloginattempts'] = '{$a->attempts} failed logins since your last login';
+$string['favoritetools'] = 'Favorite Tools';
 $string['feedback'] = 'Feedback';
 $string['file'] = 'File';
 $string['fileexists'] = 'There is already a file called {$a}';
@@ -1173,6 +1180,15 @@ $string['missingsummary'] = 'Missing summary';
 $string['missingteacher'] = 'Must choose something';
 $string['missingurl'] = 'Missing URL';
 $string['missingusername'] = 'Missing username';
+$string['modchooser'] = 'Activities/Resources chooser';
+$string['modchooserdefault'] = 'Default favorite tools for the activities/resources chooser';
+$string['modchooserpreferences'] = 'Activities/Resources chooser preferences';
+$string['modchooserpreferencesupdate'] = 'Successfully updated activities/resources chooser preferences.';
+$string['modchoosersetting'] = 'Activities/Resources chooser settings';
+$string['modchoosersetting_str'] = 'Use the customizable activities/resources chooser';
+$string['modchoosersetting_help'] = 'This setting allows you to use the new activity chooser.
+
+The new activity chooser allows you to pin favorite tools and hide infrequently used tools.';
 $string['moddoesnotsupporttype'] = 'Module {$a->modname} does not support uploads of type {$a->type}';
 $string['moodlelogo'] = 'Moodle logo';
 $string['month'] = 'Month';
@@ -1524,6 +1540,7 @@ $string['removeadmin'] = 'Remove admin';
 $string['removecreator'] = 'Remove course creator';
 $string['removestudent'] = 'Remove student';
 $string['removeteacher'] = 'Remove teacher';
+$string['removetool'] = 'Remove tool from favorites';
 $string['rename'] = 'Rename';
 $string['renamefileto'] = 'Rename <b>{$a}</b> to';
 $string['report'] = 'Report';
@@ -1538,6 +1555,7 @@ $string['requirespayment'] = 'This course requires payment for access';
 $string['reset'] = 'Reset';
 $string['resetcomponent'] = 'Component';
 $string['resetcourse'] = 'Reset course';
+$string['resetfavoritetools'] = 'Reset favorite tools';
 $string['resetinfo'] = 'This page allows you to empty a course of user data, while retaining the activities and other settings.  Please be warned that by choosing items below and submitting this page you will delete your chosen user data from this course forever!';
 $string['resetnotimplemented'] = 'Reset not implemented';
 $string['resetrecordexpired'] = 'The password reset link you used is more than {$a} minutes old and has expired. Please initiate a new password reset.';
@@ -1673,6 +1691,11 @@ $string['selectfiles'] = 'Select files';
 $string['selectmoduletoviewhelp'] = 'Select an activity or resource to view its help.
 
 Double-click on an activity or resource name to quickly add it.';
+$string['selectmoduletoviewhelpmodchooser'] = 'Select an activity or resource to view its help.
+
+Double-click on an activity or resource name to quickly add it.
+<br><br>
+{$a}';
 $string['selectnos'] = 'Select all \'No\'';
 $string['selectperiod'] = 'Select period';
 $string['selectcategorysort'] = 'Which categories would you like to sort?';
@@ -1685,6 +1708,7 @@ $string['separateandconnectedinfo'] = 'The scale based on the theory of separate
 $string['servererror'] = 'An error occurred whilst communicating with the server';
 $string['serverlocaltime'] = 'Server\'s local time';
 $string['setcategorytheme'] = 'Set category theme';
+$string['setfavoritetools'] = 'Show all tools/Set favorite tools';
 $string['setpassword'] = 'Set password';
 $string['setpasswordinstructions'] = 'Please enter your new password below, then save changes.';
 $string['settings'] = 'Settings';

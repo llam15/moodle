@@ -15,9 +15,15 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
+    @template course/modchooser
     Course module chooser.
 }}
-{{> core/chooser }}
+{{^newmodchooser}}
+    {{>core/chooser}}
+{{/newmodchooser}}
+{{#newmodchooser}}
+    {{>core/newchooser}}
+{{/newmodchooser}}
 {{#js}}
 require([
     'core/yui',
@@ -25,12 +31,19 @@ require([
 ], function(Y, Str) {
     Str.get_strings([
         { key: 'addresourceoractivity', component: 'moodle' },
+        { key: 'addtool', component: 'moodle' },
         { key: 'close', component: 'editor' },
+        { key: 'removetool', component: 'moodle' },
+        { key: 'setfavoritetools', component: 'moodle' },
+        { key: 'showcategory', component: 'moodle' },
     ]).then(function(add, close) {
         Y.use('moodle-course-modchooser', function() {
             M.course.init_chooser({
                 courseid: {{courseid}},
-                closeButtonTitle: close
+                closeButtonTitle: close,
+                userpinnedtools: {{#quote}}{{userpinnedtools}}{{/quote}},
+                defaulttools: {{#quote}}{{defaulttools}}{{/quote}},
+                newmodchooser: {{#quote}}{{newmodchooser}}{{/quote}}
             });
         });
     });

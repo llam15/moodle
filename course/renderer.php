@@ -188,6 +188,7 @@ class core_course_renderer extends plugin_renderer_base {
         if (!$this->page->requires->should_create_one_time_item_now('core_course_modchooser')) {
             return '';
         }
+        user_preference_allow_ajax_update('pinnedtools', PARAM_RAW);
         $modchooser = new \core_course\output\modchooser($course, $modules);
         return $this->render($modchooser);
     }

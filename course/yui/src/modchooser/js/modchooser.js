@@ -193,7 +193,7 @@ Y.extend(MODCHOOSER, M.core.chooserdialogue, {
                 // Show/hide reset tools link. Only display when in view all mode.
                 this.container.all(".resettools").toggleView();
 
-                var showtoptools = M.util.get_string('showcategory', 'moodle', 'favorite tools');
+                var showtoptools = M.util.get_string('showcategory', 'moodle', 'less');
                 var showalltools = M.util.get_string('setfavoritetools', 'moodle');
                 Y.all(".tooltoggle").each(function(tooltoggle) {
                     // Change link text to show all tools or show top tools.

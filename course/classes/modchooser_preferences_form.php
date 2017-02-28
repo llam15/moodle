@@ -43,7 +43,7 @@ class course_modchooser_preferences_form extends moodleform {
     public function definition() {
         global $USER, $CFG;
 
-        $mform =& $this->_form;
+        $mform = $this->_form;
 
         $returnto = $this->_customdata['returnto'];
 

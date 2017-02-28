@@ -67,13 +67,6 @@ if (!$currentuser) {
     $settings->make_active();
 }
 
-// Add modchooser preferences.
-$url = new moodle_url('/course/modchooser_preferences.php');
-$container = navigation_node::create(get_string('editinga', 'moodle', 'options'), null, navigation_node::TYPE_CATEGORY);
-$subnode = navigation_node::create(get_string('modchooser'), $url, navigation_node::TYPE_SETTING, 'modchooser', 'modchooser');
-$container->add_node($subnode);
-$settings->add_node($container);
-
 // Identifying the nodes.
 $groups = array();
 $orphans = array();
